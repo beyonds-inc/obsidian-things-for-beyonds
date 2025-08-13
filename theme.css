@@ -26,6 +26,7 @@ body {
   --accent-d: 70%; /* Accent lightness Dark Mode */
   --accent-l: 60%; /* Accent lightness Light Mode */
 
+  --beyonds: #1c7ebc;
   --blue: #2e80f2;
   --pink: #ff82b2;
   --green: #3eb4bf;
@@ -41,9 +42,9 @@ body {
   --h5-color: var(--red);
   --h6-color: var(--text-muted);
 
-  --strong-color: var(--pink);
-  --em-color: var(--pink);
-  --quote-color: var(--green);
+  --strong-color: var(--beyonds);
+  --em-color: var(--beyonds);
+  --quote-color: var(--blue);
 
   --tag-background-color-l: #bde1d3;
   --tag-font-color-l: #1d694b;
