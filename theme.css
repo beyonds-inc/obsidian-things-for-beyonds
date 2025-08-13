@@ -1627,3 +1627,37 @@ community:
 - obsidian-system-dark-mode
 - obsidian-style-settings
 */
+
+
+
+/* 改ページ用divの表示設定 */
+div[style*="page-break-after: always"] {
+    border-top: 2px dashed #888;
+    margin: 1em 0;
+    position: relative;
+}
+
+div[style*="page-break-after: always"]::before {
+    content: "[page break]";
+    position: absolute;
+    top: -0.8em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--background-primary);
+    padding: 0 1em;
+    color: #888;
+    font-size: 0.9em;
+}
+
+/* 印刷時には視覚的表示を無効化 */
+@media print {
+    div[style*="page-break-after: always"] {
+        border-top: none !important;
+        margin: 0;
+    }
+
+    div[style*="page-break-after: always"]::before {
+        content: "";
+        display: none;
+    }
+}
